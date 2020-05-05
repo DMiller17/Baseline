@@ -4,6 +4,8 @@ WORKDIR /usr/src/app
 
 COPY package.json package-lock.json ./
 
+RUN mkdir node_modules
+
 RUN npm install
 
 RUN npm link @angular/cli
